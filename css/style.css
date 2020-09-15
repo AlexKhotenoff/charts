@@ -1,10 +1,131 @@
-.chart {
-    width: 500px;
-    height: 500px;
-    background-color: #f3f3f3;
-}
+body {
+  box-sizing: border-box; }
+
+.charts {
+  background-color: #ffffff; }
+
+.charts-form__select-container {
+  padding: 32px 22px 33px 25px;
+  background-color: #5EA1F2; }
+
+.charts-form__select {
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  border: 1px solid #CACFD9;
+  border-radius: 6px;
+  background-color: #ffffff;
+  background-image: url("../img/icons/svg/select_arrow_down.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) center;
+  background-size: 9.6px 6.4px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none; }
+  .charts-form__select:last-child {
+    margin-bottom: 0; }
+
+.charts-form__option {
+  margin: 0;
+  padding: 0; }
+
+.charts-form__status-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.charts-form__status-block {
+  margin-right: 42px;
+  padding-top: 39px;
+  padding-bottom: 40px; }
+  .charts-form__status-block:first-child {
+    margin-left: 41px; }
+
+.charts-form__status-caption {
+  margin: 0;
+  margin-bottom: 2px;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000; }
+
+.charts-form__status-text {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0e619d; }
+
+.chart__caption {
+  margin: 0;
+  margin-top: 19px;
+  margin-bottom: 17px;
+  margin-left: 34px;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000; }
+
+.chart_pie {
+  width: 274px;
+  height: 271px;
+  background-color: #F3FAFF; }
+
+.chart__pie {
+  width: 100%;
+  height: 100%;
+  max-width: 202px;
+  max-height: 200px;
+  margin: 0 auto;
+  margin-top: 5px; }
+
+.charts-form__status-wrapper .chart_pie {
+  margin-right: 8px; }
+
+.charts-form__tab-panel {
+  margin: 0;
+  padding: 24px 42px;
+  background-color: #5EA1F2; }
+
+.charts-form__tab-button {
+  margin-right: 37px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
+  .charts-form__tab-button_active {
+    font-weight: bold;
+    text-decoration-line: underline; }
+  .charts-form__tab-button:hover {
+    font-weight: bold;
+    text-decoration-line: underline; }
 
 .chart_bar {
-    width: 100vw;
-    height: 700px;
-}
+  width: 100vw;
+  height: 700px; }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; }

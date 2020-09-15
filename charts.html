@@ -5,16 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page">
-    <section class="page__charts charts_panel">
-        <div id="chart" class="chart chart_pie">
+    <section class="page__charts charts">
 
-        </div>
+        <form action="charts-form">
+            <section class="charts-form__select-container">
+                <label for="chart_type" class="charts-form__label visually-hidden">Группа</label>
+                <select name="chart_type" id="chart_type" class="charts-form__select charts-form__select_group">
+                    <option value="-1" class="charts-form__option">Группа</option>
+                </select>
+
+                <label for="tech_type" class="charts-form__label visually-hidden">Техника</label>
+                <select name="tech_type" id="tech_type" class="charts-form__select charts-form__select_technics">
+                    <option value="-1" class="charts-form__option">Техника</option>
+                </select>
+            </section>
+            <section class="charts-form__status-container">
+                <div class="charts-form__status-wrapper">
+                    <div class="charts-form__status-block">
+                        <p class="charts-form__status-caption">Состояние двигателя</p>
+                        <p class="charts-form__status-text">Активная работа</p>
+                    </div>
+                    <div class="charts-form__status-block">
+                        <p class="charts-form__status-caption">Время запуска двигателя</p>
+                        <p class="charts-form__status-text">10.09.2020 в 17:00</p>
+                    </div>
+                    <div class="charts-form__status-block">
+                        <p class="charts-form__status-caption">Вид техники</p>
+                        <p class="charts-form__status-text">Автокран</p>
+                    </div>
+                    <div class="charts-form__status-block">
+                        <p class="charts-form__status-caption">ФИО водителя</p>
+                        <p class="charts-form__status-text">Иванов Иван Иванович</p>
+                    </div>
+                </div>
+                <div class="charts-form__status-wrapper">
+                    <div class="chart chart_pie">
+                        <p class="chart__caption">Диаграмма за месяц</p>
+                        <div id="chart-pie_month" class="chart__pie"></div>
+                    </div>
+                    <div class="chart chart_pie">
+                        <p class="chart__caption">Диаграмма за неделю</p>
+                        <div id="chart-pie_week" class="chart__pie"></div>
+                    </div>
+                    <div class="chart chart_pie">
+                        <p class="chart__caption">Диаграмма за день</p>
+                        <div id="chart-pie_day" class="chart__pie"></div>
+                    </div>
+                </div>
+                <div class="charts-form__status-wrapper">
+                    <div class="charts-form__status-block">
+                        <p class="charts-form__status-caption">Текущее местоположение</p>
+                        <p class="charts-form__status-text">Координаты/адрес</p>
+                    </div>
+                </div>
+            </section>
+            <section class="charts-form__tab-panel">
+                <button class="charts-form__tab-button charts-form__tab-button_active">Движения и стоянки</button>
+                <button class="charts-form__tab-button">Загруженность</button>
+            </section>
+        </form>
         <div class="chart chart_bar">
-            
+
         </div>
     </section>
 

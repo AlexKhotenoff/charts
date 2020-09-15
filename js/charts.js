@@ -1,15 +1,22 @@
 
-let p_chart = echarts.init(document.querySelector('.chart_pie'));
+// let p_chart = echarts.init(document.querySelector('.chart_pie'));
+let p_chart_month = echarts.init(document.getElementById('chart-pie_month'));
+let p_chart_week = echarts.init(document.getElementById('chart-pie_week'));
+let p_chart_day = echarts.init(document.getElementById('chart-pie_day'));
 
 //pie-chart options
 var p_option = {
-    title: {
-        text: 'Pie example'
-    },
+    // width: '100%',
+    // height: '100%',
+    // backgroundColor: '',
+    // title: {
+    //     text: 'Pie example'
+    // },
     tooltip: {},
     series: [{
         // name: 'Sales',
         type: 'pie',
+        radius: '100%',
         label: {
             show: false
         },
@@ -22,7 +29,10 @@ var p_option = {
     }]
 };
 
-p_chart.setOption(p_option);
+// p_chart.setOption(p_option);
+p_chart_month.setOption(p_option);
+p_chart_week.setOption(p_option);
+p_chart_day.setOption(p_option);
 
 //end of custom pie-chart
 
