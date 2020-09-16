@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="charts-form__status-wrapper">
-                    <div class="charts-form__status-block">
+                    <div class="charts-form__status-block charts-form__status-block_coords">
                         <p class="charts-form__status-caption">Текущее местоположение</p>
                         <p class="charts-form__status-text">Координаты/адрес</p>
                     </div>
@@ -207,9 +207,18 @@
                         </ul>
                         <div class="charts-form__summary-container">
                             <section class="charts-form__map">
+                                <div style="position:relative;overflow:hidden;">
+                                    <a href="https://yandex.ru/maps/20/arhangelsk/?utm_medium=mapframe&utm_source=maps"
+                                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Архангельск</a><a
+                                        href="https://yandex.ru/maps/20/arhangelsk/?ll=40.516939%2C64.539393&utm_medium=mapframe&utm_source=maps&z=13"
+                                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты —
+                                        поиск мест и адресов, городской транспорт</a><iframe
+                                        src="https://yandex.ru/map-widget/v1/-/CVTWu4Lj" width="100%" height="401"
+                                        frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                                </div>
                             </section>
                             <section class="charts-form__summary-chart">
-                                <div class="chart chart_pie chart_summary">
+                                <div class="chart chart_pie-summary">
                                     <p class="chart__caption">Суммарные данные</p>
                                     <div id="chart-pie_summary" class="chart__pie"></div>
                                 </div>
