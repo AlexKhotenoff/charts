@@ -65,15 +65,104 @@
                 </div>
             </section>
             <section class="charts-form__tab-panel">
-                <button class="charts-form__tab-button charts-form__tab-button_active">Движения и стоянки</button>
-                <button class="charts-form__tab-button">Загруженность</button>
+                <ul class="charts-form__tab-menu">
+                    <li class="charts-form__tab-menu-item">
+                        <button type="button" class="charts-form__tab-button charts-form__tab-button_active"
+                            data-tab="movements">Движения и стоянки</button>
+                    </li>
+                    <li class="charts-form__tab-menu-item">
+                        <button type="button" class="charts-form__tab-button" data-tab="workload">Загруженность</button>
+                    </li>
+                </ul>
+                <ul class="charts-form__tab-list">
+                    <li class="charts-form__tab-item charts-form__tab-item_movements charts-form__tab-item_active">
+                        <div class="charts-form__date-filter-wrapper">
+                            <div class="charts-form__date-filter-container">
+                                <label for="date_from" class="charts-form__date-filter-label">Дата с</label>
+                                <input type="date" name="date_from" id="date_from" class="charts-form__date-filter-date">
+                            </div>
+                            <div class="charts-form__date-filter-container">
+                                <label for="date_to" class="charts-form__date-filter-label">Дата по</label>
+                                <input type="date" name="date_to" id="date_to" class="charts-form__date-filter-date">
+                            </div>
+                        </div>
+                        <table class="charts-form__table log-table">
+                            <tr class="log-table__row">
+                                <th class="log-table__cell log-table__cell_header">Номер</th>
+                                <th class="log-table__cell log-table__cell_header">Действие</th>
+                                <th class="log-table__cell log-table__cell_header">Начало</th>
+                                <th class="log-table__cell log-table__cell_header">Конец</th>
+                                <th class="log-table__cell log-table__cell_header">Длительность</th>
+                                <th class="log-table__cell log-table__cell_header">Работа двигателя на хх</th>
+                                <th class="log-table__cell log-table__cell_header">Работа двигателя под нагрузкой</th>
+                                <th class="log-table__cell log-table__cell_header">Скорость средняя</th>
+                                <th class="log-table__cell log-table__cell_header">Пробег</th>
+                            </tr>
+                            <tr class="log-table__row">
+                                <td class="log-table__cell">1</td>
+                                <td class="log-table__cell">parking</td>
+                                <td class="log-table__cell">15:00</td>
+                                <td class="log-table__cell">23:00</td>
+                                <td class="log-table__cell">08:00</td>
+                                <td class="log-table__cell">08:00</td>
+                                <td class="log-table__cell">08:00</td>
+                                <td class="log-table__cell">10 км/ч</td>
+                                <td class="log-table__cell">20 км</td>
+                            </tr>
+                            <tr class="log-table__row">
+                                <td class="log-table__cell">2</td>
+                                <td class="log-table__cell">parking</td>
+                                <td class="log-table__cell">15:00</td>
+                                <td class="log-table__cell">23:00</td>
+                                <td class="log-table__cell">08:00</td>
+                                <td class="log-table__cell">08:00</td>
+                                <td class="log-table__cell">08:00</td>
+                                <td class="log-table__cell">10 км/ч</td>
+                                <td class="log-table__cell">20 км</td>
+                            </tr>
+                            <tr class="log-table__row">
+                                <td class="log-table__cell">3</td>
+                                <td class="log-table__cell">parking</td>
+                                <td class="log-table__cell">15:00</td>
+                                <td class="log-table__cell">23:00</td>
+                                <td class="log-table__cell">08:00</td>
+                                <td class="log-table__cell">08:00</td>
+                                <td class="log-table__cell">08:00</td>
+                                <td class="log-table__cell">10 км/ч</td>
+                                <td class="log-table__cell">20 км</td>
+                            </tr>
+                            <tr class="log-table__row">
+                                <td class="log-table__cell">4/td>
+                                <td class="log-table__cell">parking</td>
+                                <td class="log-table__cell">15:00</td>
+                                <td class="log-table__cell">23:00</td>
+                                <td class="log-table__cell">08:00</td>
+                                <td class="log-table__cell">08:00</td>
+                                <td class="log-table__cell">08:00</td>
+                                <td class="log-table__cell">10 км/ч</td>
+                                <td class="log-table__cell">20 км</td>
+                            </tr>
+                            <tr class="log-table__row">
+                                <td class="log-table__cell">5</td>
+                                <td class="log-table__cell">parking</td>
+                                <td class="log-table__cell">15:00</td>
+                                <td class="log-table__cell">23:00</td>
+                                <td class="log-table__cell">08:00</td>
+                                <td class="log-table__cell">08:00</td>
+                                <td class="log-table__cell">08:00</td>
+                                <td class="log-table__cell">10 км/ч</td>
+                                <td class="log-table__cell">20 км</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li class="charts-form__tab-item charts-form__tab-item_workload">
+                        <div class="chart chart_bar">
+                        </div>
+                    </li>
+                </ul>
             </section>
         </form>
-        <div class="chart chart_bar">
-
-        </div>
     </section>
-
 </body>
 <script src="js/echarts.min.js"></script>
 <script src="js/charts.js"></script>

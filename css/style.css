@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 400;
+  src: local("SF UI Display"), local("SF UI Display-Regular"), url("../fonts/SFUIDisplay/SFUIDisplay-Regular.ttf") format("truetype"); }
+
 body {
   box-sizing: border-box; }
 
@@ -19,6 +25,11 @@ body {
   padding-left: 20px;
   border: 1px solid #CACFD9;
   border-radius: 6px;
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
   background-color: #ffffff;
   background-image: url("../img/icons/svg/select_arrow_down.svg");
   background-repeat: no-repeat;
@@ -68,10 +79,7 @@ body {
   color: #0e619d; }
 
 .chart__caption {
-  margin: 0;
-  margin-top: 19px;
-  margin-bottom: 17px;
-  margin-left: 34px;
+  margin: 19px 34px 17px 34px;
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -96,13 +104,17 @@ body {
 .charts-form__status-wrapper .chart_pie {
   margin-right: 8px; }
 
-.charts-form__tab-panel {
+.charts-form__tab-menu {
+  display: flex;
   margin: 0;
-  padding: 24px 42px;
-  background-color: #5EA1F2; }
+  padding: 0;
+  padding: 14px 42px;
+  background-color: #5EA1F2;
+  list-style: none; }
 
 .charts-form__tab-button {
   margin-right: 37px;
+  padding: 5px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -118,6 +130,78 @@ body {
   .charts-form__tab-button:hover {
     font-weight: bold;
     text-decoration-line: underline; }
+
+.charts-form__tab-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.charts-form__tab-item {
+  display: none;
+  padding: 40px 41px; }
+  .charts-form__tab-item_active {
+    display: block; }
+
+.charts-form__date-filter-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 27px; }
+
+.charts-form__date-filter-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 46px; }
+
+.charts-form__date-filter-label {
+  margin: 0;
+  margin-bottom: 11px;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000; }
+
+.charts-form__date-filter-date {
+  display: flex;
+  align-items: center;
+  width: 293px;
+  padding: 12px 20px;
+  background: #ffffff;
+  border: 1px solid #cacfd9;
+  border-radius: 6px;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #22365f; }
+
+.charts-form__table.log-table {
+  width: 100%;
+  border-collapse: collapse; }
+
+.log-table__cell {
+  height: 70px;
+  width: 300px;
+  border: 1px solid #c0c0c0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000; }
+  .log-table__cell:first-child {
+    width: 75px; }
+  .log-table__cell:nth-child(2) {
+    width: 650px; }
+
+.log-table__cell_header {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #5EA1F2; }
 
 .chart_bar {
   width: 100vw;

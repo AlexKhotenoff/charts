@@ -121,3 +121,26 @@ b_option = {
 b_chart.setOption(b_option);
 
 //end of bar-chart
+
+//tab panel buttons
+let tab_buttons = document.querySelectorAll('.charts-form__tab-button');
+
+tab_buttons.forEach(element => {
+    element.addEventListener('click', function (evt) {
+        evt.preventDefault();
+
+        //clear active button
+        let active_button = document.querySelector('.charts-form__tab-button_active');
+        active_button.classList.remove('charts-form__tab-button_active');
+
+        //activate current button
+        element.classList.toggle('charts-form__tab-button_active');
+
+        //clear active tab
+        document.querySelector('.charts-form__tab-item_active').classList.toggle('charts-form__tab-item_active');
+
+        //activate current tab
+        let active_tab = document.querySelector('.charts-form__tab-item_' + element.dataset.tab);
+        active_tab.classList.toggle('charts-form__tab-item_active');
+    });
+});
