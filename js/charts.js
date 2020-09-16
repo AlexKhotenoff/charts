@@ -43,13 +43,10 @@ p_chart_summary.setOption(p_option);
 
 //start bar-chart
 
-let b_chart = echarts.init(document.querySelector(".chart_bar"));
+let b_chart = echarts.init(document.getElementById("chart-bar"));
 
 //bar-chart options
 b_option = {
-    title: {
-        text: 'Bar example'
-    },
     tooltip: {
         trigger: 'axis',
         axisPointer: {            
@@ -57,10 +54,12 @@ b_option = {
         }
     },
     grid: {
-        left: '4%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
+        top: '0',
+        left: '10px',
+        right: '0',
+        bottom: '0',
+        width: 'auto',
+        containLabel: true,
     },
     xAxis: {
         type: 'value'

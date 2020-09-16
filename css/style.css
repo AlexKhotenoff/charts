@@ -22,6 +22,10 @@ body {
 
 .charts {
   font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
   background-color: #ffffff; }
 
 .charts-form__select-container {
@@ -247,7 +251,7 @@ body {
   .charts-form__info-item:nth-child(6n) {
     margin-right: 0; }
 
-.charts-form__info-caption {
+.charts-form__info-title {
   margin: 0;
   padding: 0;
   font-family: inherit;
@@ -258,7 +262,7 @@ body {
   text-align: left;
   color: #000000; }
 
-.charts-form__info-text {
+.charts-form__info-value {
   margin: 0;
   padding: 0;
   font-family: inherit;
@@ -298,29 +302,115 @@ body {
     max-width: 299px;
     max-height: 296px; }
 
+.charts-form__first-start {
+  margin-bottom: 30px; }
+
 .first-start {
   padding: 14px;
   background-color: #f3faff; }
 
 .first-start__list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none; }
 
 .first-start__item {
+  margin-right: 15px;
+  padding: 13px;
   background-color: #f3f3f3; }
 
 .first-start__title {
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
   font-family: inherit;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px; }
 
+.first-start__date {
+  margin-bottom: 10px; }
+
+.first-start__date-caption {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000; }
+
+.first-start__date-value {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0e619d; }
+
+.first-start__time-caption {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: #000000; }
+
+.first-start__time-value {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: #000000; }
+
+.charts-form__stats {
+  margin-bottom: 30px; }
+  .charts-form__stats .stats__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .charts-form__stats .stats__item {
+    width: calc((100% - 75px) / 6);
+    margin: 0;
+    margin-right: 15px;
+    padding: 0;
+    padding: 13px;
+    background-color: #f3f3f3; }
+    .charts-form__stats .stats__item:nth-child(6n) {
+      margin-right: 0; }
+  .charts-form__stats .stats__title {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font: inherit;
+    font-weight: bold; }
+  .charts-form__stats .stats__caption {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: #000000; }
+  .charts-form__stats .stats__value {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    color: #0e619d; }
+  .charts-form__stats .stats__percent {
+    margin-bottom: 10px; }
+
 .chart_bar {
-  width: 100vw;
-  height: 700px; }
+  width: 100%;
+  height: 870px;
+  background-color: #f3f3f3; }
+
+.chart__bar {
+  width: 600px;
+  height: 600px; }
 
 .visually-hidden {
   position: absolute;
