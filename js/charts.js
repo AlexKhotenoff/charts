@@ -4,6 +4,8 @@ let p_chart_month = echarts.init(document.getElementById('chart-pie_month'));
 let p_chart_week = echarts.init(document.getElementById('chart-pie_week'));
 let p_chart_day = echarts.init(document.getElementById('chart-pie_day'));
 
+let p_chart_summary = echarts.init(document.getElementById('chart-pie_summary'));
+
 //pie-chart options
 var p_option = {
     // width: '100%',
@@ -33,6 +35,8 @@ var p_option = {
 p_chart_month.setOption(p_option);
 p_chart_week.setOption(p_option);
 p_chart_day.setOption(p_option);
+
+p_chart_summary.setOption(p_option);
 
 //end of custom pie-chart
 

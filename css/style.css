@@ -4,8 +4,12 @@
   font-weight: 400;
   src: local("SF UI Display"), local("SF UI Display-Regular"), url("../fonts/SFUIDisplay/SFUIDisplay-Regular.ttf") format("truetype"); }
 
-body {
+html {
   box-sizing: border-box; }
+
+body {
+  max-width: 1280px;
+  margin: 0 auto; }
 
 .charts {
   background-color: #ffffff; }
@@ -25,7 +29,7 @@ body {
   padding-left: 20px;
   border: 1px solid #CACFD9;
   border-radius: 6px;
-  font-family: SF UI Display;
+  font-family: "SF UI Display";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -178,9 +182,10 @@ body {
   line-height: 20px;
   color: #22365f; }
 
-.charts-form__table.log-table {
+.charts-form__table {
   width: 100%;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  margin-bottom: 37px; }
 
 .log-table__cell {
   height: 70px;
@@ -202,6 +207,67 @@ body {
   font-weight: bold;
   color: #ffffff;
   background-color: #5EA1F2; }
+
+.charts-form__info-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+  list-style: none; }
+
+.charts-form__info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  width: calc(96% / 6);
+  height: 89px;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  padding: 8px;
+  background-color: #f3f3f3; }
+
+.charts-form__info-caption {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  color: #000000; }
+
+.charts-form__info-text {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  color: #0e619d; }
+
+.charts-form__summary-container {
+  display: flex;
+  width: 100%;
+  height: 401px; }
+
+.charts-form__map {
+  width: 49%;
+  height: 100%;
+  background-color: green; }
+
+.charts-form__summary-chart {
+  width: 49%;
+  height: 100%; }
+  .charts-form__summary-chart .chart__pie {
+    width: 405px;
+    height: 401px; }
 
 .chart_bar {
   width: 100vw;

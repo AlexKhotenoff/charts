@@ -79,7 +79,8 @@
                         <div class="charts-form__date-filter-wrapper">
                             <div class="charts-form__date-filter-container">
                                 <label for="date_from" class="charts-form__date-filter-label">Дата с</label>
-                                <input type="date" name="date_from" id="date_from" class="charts-form__date-filter-date">
+                                <input type="date" name="date_from" id="date_from"
+                                    class="charts-form__date-filter-date">
                             </div>
                             <div class="charts-form__date-filter-container">
                                 <label for="date_to" class="charts-form__date-filter-label">Дата по</label>
@@ -132,7 +133,7 @@
                                 <td class="log-table__cell">20 км</td>
                             </tr>
                             <tr class="log-table__row">
-                                <td class="log-table__cell">4/td>
+                                <td class="log-table__cell">4</td>
                                 <td class="log-table__cell">parking</td>
                                 <td class="log-table__cell">15:00</td>
                                 <td class="log-table__cell">23:00</td>
@@ -154,6 +155,66 @@
                                 <td class="log-table__cell">20 км</td>
                             </tr>
                         </table>
+                        <ul class="charts-form__info-list">
+                            <li class="charts-form__info-item">
+                                <p class="charts-form__info-caption">Общее время анализа</p>
+                                <p class="charts-form__info-text">48:00:00</p>
+                            </li>
+                            <li class="charts-form__info-item">
+                                <p class="charts-form__info-caption">Время на стоянках</p>
+                                <p class="charts-form__info-text">11:13:51 (25.7%)</p>
+                            </li>
+                            <li class="charts-form__info-item">
+                                <p class="charts-form__info-caption">Время в движении</p>
+                                <p class="charts-form__info-text">31:38:45 (72.4%)</p>
+                            </li>
+                            <li class="charts-form__info-item">
+                                <p class="charts-form__info-caption">Время в разрыве</p>
+                                <p class="charts-form__info-text">00:51:01 (1.9%)</p>
+                            </li>
+                            <li class="charts-form__info-item">
+                                <p class="charts-form__info-caption">Время работы двигателя</p>
+                                <p class="charts-form__info-text">33:01:15 (68.8%)</p>
+                            </li>
+                            <li class="charts-form__info-item">
+                                <p class="charts-form__info-caption">Время работы двигателя на хх</p>
+                                <p class="charts-form__info-text">00:00:36 (0%)</p>
+                            </li>
+                            <li class="charts-form__info-item">
+                                <p class="charts-form__info-caption">Время работы двигателя под нагрузкой</p>
+                                <p class="charts-form__info-text">33:00:39 (68.8%)</p>
+                            </li>
+                            <li class="charts-form__info-item">
+                                <p class="charts-form__info-caption">Общий пробег</p>
+                                <p class="charts-form__info-text">97.2 км</p>
+                            </li>
+                            <li class="charts-form__info-item">
+                                <p class="charts-form__info-caption">Пробег в разрыве</p>
+                                <p class="charts-form__info-text">0 км</p>
+                            </li>
+                            <li class="charts-form__info-item">
+                                <p class="charts-form__info-caption">Средняя скорость</p>
+                                <p class="charts-form__info-text">3.6 км/ч</p>
+                            </li>
+                            <li class="charts-form__info-item">
+                                <p class="charts-form__info-caption">Максимальная скорость</p>
+                                <p class="charts-form__info-text">14.7 км/ч</p>
+                            </li>
+                            <li class="charts-form__info-item">
+                                <p class="charts-form__info-caption">Расчетный расход</p>
+                                <p class="charts-form__info-text">709.95 л</p>
+                            </li>
+                        </ul>
+                        <div class="charts-form__summary-container">
+                            <section class="charts-form__map">
+                            </section>
+                            <section class="charts-form__summary-chart">
+                                <div class="chart chart_pie chart_summary">
+                                    <p class="chart__caption">Суммарные данные</p>
+                                    <div id="chart-pie_summary" class="chart__pie"></div>
+                                </div>
+                            </section>
+                        </div>
                     </li>
                     <li class="charts-form__tab-item charts-form__tab-item_workload">
                         <div class="chart chart_bar">
