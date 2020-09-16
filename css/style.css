@@ -225,7 +225,6 @@ body {
 
 .charts-form__info-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   margin-bottom: 25px;
@@ -237,13 +236,16 @@ body {
   flex-direction: column;
   justify-content: space-around;
   box-sizing: border-box;
-  width: calc(96% / 6);
+  width: calc((100% - 50px) / 6);
   height: 89px;
   margin: 0;
   margin-bottom: 12px;
+  margin-right: 10px;
   padding: 0;
   padding: 8px;
   background-color: #f3f3f3; }
+  .charts-form__info-item:nth-child(6n) {
+    margin-right: 0; }
 
 .charts-form__info-caption {
   margin: 0;
@@ -276,7 +278,7 @@ body {
   width: 49%;
   height: 100%;
   margin-right: 20px;
-  background-color: green; }
+  background-color: #fcf9ef; }
   .charts-form__map iframe {
     width: 100%;
     height: 401px; }
@@ -289,12 +291,32 @@ body {
   width: 100%;
   height: 100%;
   padding: 17px 36px;
-  background-color: #F3FAFF; }
+  background-color: #f3faff; }
   .chart_pie-summary .chart__caption {
     margin-bottom: 20px; }
   .chart_pie-summary .chart__pie {
     max-width: 299px;
     max-height: 296px; }
+
+.first-start {
+  padding: 14px;
+  background-color: #f3faff; }
+
+.first-start__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.first-start__item {
+  background-color: #f3f3f3; }
+
+.first-start__title {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px; }
 
 .chart_bar {
   width: 100vw;
