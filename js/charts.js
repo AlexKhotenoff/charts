@@ -14,6 +14,7 @@ var p_option = {
     // title: {
     //     text: 'Pie example'
     // },
+    animation: false,
     tooltip: {},
     series: [{
         // name: 'Sales',
