@@ -228,10 +228,10 @@ dropdown_button.forEach(element => {
                 container.classList.toggle('dropdown__container_show');
             });
         }
-        // this.parentElement.parentElement.scrollIntoView({
-        //     behavior: 'smooth',
-        //     block: 'start'
-        // });
+        this.parentElement.parentElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
     });
 });
 //End of dropdown
