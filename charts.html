@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charts</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/datepicker.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -79,12 +80,13 @@
                         <div class="charts-form__date-filter-wrapper">
                             <div class="charts-form__date-filter-container">
                                 <label for="date_from" class="charts-form__date-filter-label">Дата с</label>
-                                <input type="date" name="date_from" id="date_from"
-                                    class="charts-form__date-filter-date">
+                                <input type="text" name="date_from" id="date_from"
+                                    class="datepicker-here charts-form__date-filter-date" placeholder="дд.мм.гггг">
                             </div>
                             <div class="charts-form__date-filter-container">
                                 <label for="date_to" class="charts-form__date-filter-label">Дата по</label>
-                                <input type="date" name="date_to" id="date_to" class="charts-form__date-filter-date">
+                                <input type="text" name="date_to" id="date_to" 
+                                class="datepicker-here charts-form__date-filter-date" placeholder="дд.мм.гггг">
                             </div>
                         </div>
                         <div class="charts-form__table-container">
@@ -107,39 +109,54 @@
                                 <tbody>
                                     <tr class="log-table__row">
                                         <td data-label="Номер" class="log-table__cell">1</td>
-                                        <td data-label="Действие" class="log-table__cell dropdown__container">parking</td>
-                                        <td data-label="Начало" class="log-table__cell dropdown__container">15:00</td>
-                                        <td data-label="Конец" class="log-table__cell dropdown__container">23:00</td>
-                                        <td data-label="Длительность" class="log-table__cell dropdown__container">08:00</td>
-                                        <td data-label="Работа двигателя на хх" class="log-table__cell dropdown__container">08:00</td>
-                                        <td data-label="Работа двигателя под нагрузкой" class="log-table__cell dropdown__container">08:00
+                                        <td data-label="Действие" class="log-table__cell">parking
                                         </td>
-                                        <td data-label="Скорость средняя" class="log-table__cell dropdown__container">10 км/ч</td>
-                                        <td data-label="Пробег" class="log-table__cell dropdown__container">20 км</td>
+                                        <td data-label="Начало" class="log-table__cell">15:00</td>
+                                        <td data-label="Конец" class="log-table__cell">23:00</td>
+                                        <td data-label="Длительность" class="log-table__cell">08:00
+                                        </td>
+                                        <td data-label="Работа двигателя на хх"
+                                            class="log-table__cell">08:00</td>
+                                        <td data-label="Работа двигателя под нагрузкой"
+                                            class="log-table__cell">08:00
+                                        </td>
+                                        <td data-label="Скорость средняя" class="log-table__cell">10
+                                            км/ч</td>
+                                        <td data-label="Пробег" class="log-table__cell">20 км</td>
                                     </tr>
                                     <tr class="log-table__row">
-                                        <td data-label="Номер" class="log-table__cell">2</td>
-                                        <td data-label="Действие" class="log-table__cell dropdown__container">parking</td>
-                                        <td data-label="Начало" class="log-table__cell dropdown__container">15:00</td>
-                                        <td data-label="Конец" class="log-table__cell dropdown__container">23:00</td>
-                                        <td data-label="Длительность" class="log-table__cell dropdown__container">08:00</td>
-                                        <td data-label="Работа двигателя на хх" class="log-table__cell dropdown__container">08:00</td>
-                                        <td data-label="Работа двигателя под нагрузкой" class="log-table__cell dropdown__container">08:00
+                                        <td data-label="Номер" class="log-table__cell">1</td>
+                                        <td data-label="Действие" class="log-table__cell">parking
                                         </td>
-                                        <td data-label="Скорость средняя" class="log-table__cell dropdown__container">10 км/ч</td>
-                                        <td data-label="Пробег" class="log-table__cell dropdown__container">20 км</td>
+                                        <td data-label="Начало" class="log-table__cell">15:00</td>
+                                        <td data-label="Конец" class="log-table__cell">23:00</td>
+                                        <td data-label="Длительность" class="log-table__cell">08:00
+                                        </td>
+                                        <td data-label="Работа двигателя на хх"
+                                            class="log-table__cell">08:00</td>
+                                        <td data-label="Работа двигателя под нагрузкой"
+                                            class="log-table__cell">08:00
+                                        </td>
+                                        <td data-label="Скорость средняя" class="log-table__cell">10
+                                            км/ч</td>
+                                        <td data-label="Пробег" class="log-table__cell">20 км</td>
                                     </tr>
                                     <tr class="log-table__row">
-                                        <td data-label="Номер" class="log-table__cell">3</td>
-                                        <td data-label="Действие" class="log-table__cell dropdown__container">parking</td>
-                                        <td data-label="Начало" class="log-table__cell dropdown__container">15:00</td>
-                                        <td data-label="Конец" class="log-table__cell dropdown__container">23:00</td>
-                                        <td data-label="Длительность" class="log-table__cell dropdown__container">08:00</td>
-                                        <td data-label="Работа двигателя на хх" class="log-table__cell dropdown__container">08:00</td>
-                                        <td data-label="Работа двигателя под нагрузкой" class="log-table__cell dropdown__container">08:00
+                                        <td data-label="Номер" class="log-table__cell">1</td>
+                                        <td data-label="Действие" class="log-table__cell">parking
                                         </td>
-                                        <td data-label="Скорость средняя" class="log-table__cell dropdown__container">10 км/ч</td>
-                                        <td data-label="Пробег" class="log-table__cell dropdown__container">20 км</td>
+                                        <td data-label="Начало" class="log-table__cell">15:00</td>
+                                        <td data-label="Конец" class="log-table__cell">23:00</td>
+                                        <td data-label="Длительность" class="log-table__cell">08:00
+                                        </td>
+                                        <td data-label="Работа двигателя на хх"
+                                            class="log-table__cell">08:00</td>
+                                        <td data-label="Работа двигателя под нагрузкой"
+                                            class="log-table__cell">08:00
+                                        </td>
+                                        <td data-label="Скорость средняя" class="log-table__cell">10
+                                            км/ч</td>
+                                        <td data-label="Пробег" class="log-table__cell">20 км</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -218,12 +235,13 @@
                         <div class="charts-form__date-filter-wrapper">
                             <div class="charts-form__date-filter-container">
                                 <label for="date_from" class="charts-form__date-filter-label">Дата с</label>
-                                <input type="date" name="date_from" id="date_from"
-                                    class="charts-form__date-filter-date">
+                                <input type="text" name="date_from" id="date_from"
+                                    class="datepicker-here charts-form__date-filter-date" placeholder="дд.мм.гггг">
                             </div>
                             <div class="charts-form__date-filter-container">
                                 <label for="date_to" class="charts-form__date-filter-label">Дата по</label>
-                                <input type="date" name="date_to" id="date_to" class="charts-form__date-filter-date">
+                                <input type="text" name="date_to" id="date_to" 
+                                class="datepicker-here charts-form__date-filter-date" placeholder="дд.мм.гггг">
                             </div>
                         </div>
                         <ul class="charts-form__info-list">
@@ -384,6 +402,8 @@
         </form>
     </section>
 </body>
+<script src="js/jquery.min.js"></script>
+<script src="js/datepicker.min.js"></script>
 <script src="js/echarts.min.js"></script>
 <script src="js/charts.js"></script>
 
