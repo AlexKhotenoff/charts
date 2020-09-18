@@ -54,12 +54,10 @@ b_option = {
         }
     },
     grid: {
-        top: '0',
-        left: '10px',
-        right: '0',
-        bottom: '0',
-        width: 'auto',
-        containLabel: true,
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
     },
     xAxis: {
         type: 'value'
@@ -146,6 +144,8 @@ tab_buttons.forEach(element => {
         //activate current tab
         let active_tab = document.querySelector('.charts-form__tab-item_' + element.dataset.tab);
         active_tab.classList.toggle('charts-form__tab-item_active');
+        b_chart.resize();
+        //p_chart.resize();
     });
 });
 
@@ -235,3 +235,7 @@ dropdown_button.forEach(element => {
     });
 });
 //End of dropdown
+window.addEventListener("resize", function(){
+    b_chart.resize();
+    //p_chart.resize();
+});
