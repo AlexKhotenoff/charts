@@ -1,4 +1,3 @@
-// let p_chart = echarts.init(document.querySelector('.chart_pie'));
 let p_chart_month = echarts.init(document.getElementById('chart-pie_month'));
 let p_chart_week = echarts.init(document.getElementById('chart-pie_week'));
 let p_chart_day = echarts.init(document.getElementById('chart-pie_day'));
