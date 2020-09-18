@@ -146,11 +146,13 @@ tab_buttons.forEach(element => {
         let active_tab = document.querySelector('.charts-form__tab-item_' + element.dataset.tab);
         active_tab.classList.toggle('charts-form__tab-item_active');
         b_chart.resize();
-        //p_chart.resize();
     });
 });
 
 window.addEventListener("resize", function(){
     b_chart.resize();
-    //p_chart.resize();
+    p_chart_day.resize();
+    p_chart_week.resize();
+    p_chart_month.resize();
+    p_chart_summary.resize();
 });

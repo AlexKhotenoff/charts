@@ -76,7 +76,7 @@ body {
   margin-bottom: 40px; }
   .charts-form__status-block_coords {
     margin-top: 25px;
-    margin-bottom: 20px; }
+    margin-bottom: 0; }
 
 .charts-form__status-caption {
   margin: 0;
@@ -113,19 +113,20 @@ body {
 .chart_pie {
   width: 274px;
   height: 274px;
-  padding: 17px 36px;
+  padding: 15px;
+  margin-bottom: 10px;
   background-color: #F3FAFF; }
 
 .chart__pie {
   width: 100%;
   height: 100%;
   max-width: 202px;
-  max-height: 200px;
+  max-height: 202px;
   margin: 0 auto;
   margin-top: 5px; }
 
 .charts-form__status-wrapper .chart_pie {
-  margin-right: 8px; }
+  margin-right: 10px; }
 
 .charts-form__tab-menu {
   display: flex;
@@ -157,13 +158,23 @@ body {
 .charts-form__tab-list {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  overflow: hidden; }
+
+@keyframes item-show {
+  from {
+    transform: translateY(-20px);
+    opacity: 0; }
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
 
 .charts-form__tab-item {
   display: none;
   padding: 40px; }
   .charts-form__tab-item_active {
-    display: block; }
+    display: block;
+    animation: item-show 0.5s normal; }
 
 .charts-form__date-filter-container {
   display: flex;
@@ -442,6 +453,8 @@ body {
     padding: 25px; }
   .charts-form__status-container {
     padding: 25px; }
+  .charts-form__status-block_coords {
+    margin-bottom: 20px; }
   .charts-form__tab-menu {
     padding: 14px 25px; }
   .charts-form__tab-item {
