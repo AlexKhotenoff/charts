@@ -194,7 +194,7 @@ body {
   background-color: #ffffff;
   background-image: url("../img/icons/svg/datepicker_icon.svg");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: 95% center;
   border: 1px solid #cacfd9;
   border-radius: 6px;
   font-family: inherit;
@@ -421,8 +421,7 @@ body {
   width: 100%;
   height: 600px;
   background-color: #f3f3f3;
-  position: relative;
-}
+  position: relative; }
 
 #chart-bar {
   position: absolute;
@@ -432,8 +431,7 @@ body {
   left: 0;
   padding: 10px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 @media screen and (max-width: 900px) {
   .charts-form__table-container {
@@ -556,7 +554,7 @@ body {
     flex-wrap: nowrap;
     overflow: scroll; }
   .first-start__item {
-    width: calc((100% - 15px) / 2);
+    min-width: calc((100% - 15px) / 3);
     margin-right: 15px;
     margin-bottom: 15px; }
   .charts-form__stats .stats__item {

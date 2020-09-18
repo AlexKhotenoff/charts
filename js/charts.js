@@ -55,8 +55,9 @@ b_option = {
     },
     grid: {
         left: '3%',
-        right: '4%',
+        right: '5%',
         bottom: '3%',
+        top: '3%',
         containLabel: true
     },
     xAxis: {
