@@ -299,7 +299,7 @@ body {
 .charts-form__map {
   width: 49%;
   height: 100%;
-  margin-right: 20px;
+  margin-right: 10px;
   background-color: #fcf9ef; }
   .charts-form__map iframe {
     width: 100%;
@@ -492,17 +492,31 @@ body {
     .charts-form__info-item:nth-child(4n) {
       margin-right: 0; }
   .charts-form__summary-container {
-    justify-content: space-between;
-    height: 270px; }
+    flex-direction: column;
+    height: max-content; }
   .charts-form__map {
-    width: 59%;
-    margin-right: 0; }
-    .charts-form__map iframe {
-      height: 270px; }
+    width: 100%;
+    margin-bottom: 15px;
+    order: 2; }
   .charts-form__summary-chart {
-    width: 40%; }
-  .chart_pie-summary .chart__caption {
-    margin-bottom: 0px; }
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    order: 1; }
+  .chart_pie-summary {
+    width: 274px;
+    height: 274px;
+    padding: 17px 36px;
+    background-color: #f3faff;
+    margin-right: 0;
+    margin-bottom: 15px; }
+    .chart_pie-summary .chart__caption {
+      margin-bottom: 0px; }
+    .chart_pie-summary .chart__pie {
+      max-width: 296px;
+      max-height: 296px;
+      margin-top: 0; }
   .charts-form__stats .stats__item {
     width: calc((100% - 45px) / 4);
     margin-right: 15px; }
@@ -542,27 +556,6 @@ body {
       margin-right: 10px; }
     .charts-form__info-item:nth-child(2n) {
       margin-right: 0; }
-  .charts-form__summary-container {
-    flex-direction: column; }
-  .charts-form__map {
-    width: 100%;
-    margin-bottom: 15px; }
-  .charts-form__summary-chart {
-    display: flex;
-    justify-content: center;
-    width: 100%; }
-  .chart_pie-summary {
-    width: 274px;
-    height: 274px;
-    padding: 17px 36px;
-    background-color: #f3faff;
-    margin-right: 0;
-    margin-bottom: 15px; }
-    .chart_pie-summary .chart__caption {
-      margin-bottom: 0px; }
-    .chart_pie-summary .chart__pie {
-      max-width: 296px;
-      max-height: 296px; }
   .first-start__list {
     flex-wrap: nowrap;
     overflow: scroll; }
