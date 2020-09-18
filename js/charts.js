@@ -6,6 +6,10 @@ let p_chart_summary = echarts.init(document.getElementById('chart-pie_summary'))
 
 //pie-chart options
 var p_option = {
+    tooltip: {
+        trigger: 'item',
+        formatter: '{b} : {c} ({d}%)'
+    },
     series: [
         {
             type: 'pie',
