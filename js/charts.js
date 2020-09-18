@@ -6,21 +6,31 @@ let p_chart_summary = echarts.init(document.getElementById('chart-pie_summary'))
 
 //pie-chart options
 var p_option = {
-    animation: false,
-    tooltip: {},
-    series: [{
-        type: 'pie',
-        radius: '100%',
-        label: {
-            show: false
-        },
-        emphasis: {
+    series: [
+        {
+            type: 'pie',
+            radius: '70%',
+            center: ['50%', '50%'],
+            selectedMode: 'single',
             label: {
-                show: false
+                show: false,
+            },
+            data: [
+                { value: 535, name: '1' },
+                { value: 510, name: '2' },
+                { value: 634, name: '3' },
+                { value: 735, name: '4' },
+                { value: 735, name: '5' },
+            ],
+            emphasis: {
+                itemStyle: {
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
             }
-        },
-        data: [5, 20, 36, 10, 10, 20]
-    }]
+        }
+    ]
 };
 
 // p_chart.setOption(p_option);
@@ -137,7 +147,7 @@ tab_buttons.forEach(element => {
     });
 });
 
-window.addEventListener("resize", function(){
+window.addEventListener("resize", function () {
     b_chart.resize();
     p_chart_day.resize();
     p_chart_week.resize();
