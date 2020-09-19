@@ -120,43 +120,87 @@ body {
     color: #0e619d;
 }
 
-.chart__caption {
-    margin: 0;
-    margin-top: 15px;
-    margin-left: 15px;
-    padding: 0;
+.charts-form__refresh {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+
+    border: none;
 
     font-family: inherit;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    color: #000000;
+    color: #ffffff;
+
+    background-color: $button_main_color;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: $button_hover_color;
+    }
+
+    &:active {
+        background-color: $button_active_color;
+    }
+
+    &:disabled {
+        background-color: $button_disabled_color;
+    }
+}
+
+.chart {
+    background-color: #f3faff;
 }
 
 .chart_pie {
-    width: 225px;
-    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
 
-    // padding: 15px;
-    margin-bottom: 10px;
+    max-width: 300px;
+    max-height: 300px;
 
-    background-color: $pie_back_color;
+    margin-right: 15px;
+
+    .chart__container {
+        justify-self: flex-end;
+        margin: auto;
+
+        width: 200px;
+        height: 200px;
+    }
+
+    .chart__caption {
+        align-self: flex-start;
+        margin: 15px 0 0 25px;
+        padding: 0;
+
+        font-family: inherit;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #000000;
+    }
+
+    .chart__pie {
+        width: 100%;
+        height: 100%;
+    }
 }
 
-.chart__pie {
-    width: 100%;
+.chart_pie-summary {
     height: 100%;
-    max-width: 202px;
-    max-height: 202px;
-    // max-width: 259px;
-    // max-height: 251px;
-    margin: 0 auto;
-    margin-top: 5px;
-}
+    max-width: 405px;
+    max-height: 600px;
+    margin-right: 0;
 
-.charts-form__status-wrapper .chart_pie {
-    margin-right: 10px;
+    .chart__container {
+        margin: auto;
+
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .charts-form__tab-menu {
@@ -202,7 +246,6 @@ body {
     &:hover {
         text-decoration-line: underline;
     }
-
 }
 
 .charts-form__tab-list {
@@ -219,7 +262,7 @@ body {
         transform: translateY(-20px);
         opacity: 0;
     }
-    to{
+    to {
         transform: translateY(0);
         opacity: 1;
     }
@@ -349,7 +392,7 @@ body {
     box-sizing: border-box;
 
     width: calc((100% - 50px) / 6);
-    height: 89px;
+    min-height: 90px;
     margin: 0;
     margin-bottom: 12px;
     margin-right: 10px;
@@ -365,6 +408,7 @@ body {
 
 .charts-form__info-title {
     margin: 0;
+    margin-bottom: 10px;
     padding: 0;
 
     font-family: inherit;
@@ -414,24 +458,6 @@ body {
 .charts-form__summary-chart {
     width: 405px;
     height: 100%;
-}
-
-.chart_pie-summary {
-    width: 100%;
-    height: 100%;
-
-    padding: 17px 36px;
-
-    background-color: #f3faff;
-
-    .chart__caption {
-        margin-bottom: 20px;
-    }
-
-    .chart__pie {
-        max-width: 299px;
-        max-height: 296px;
-    }
 }
 
 .charts-form__first-start {
@@ -592,21 +618,21 @@ body {
 }
 
 .chart_bar {
+    position: relative;
+
     width: 100%;
     height: 600px;
     background-color: #f3f3f3;
-    position: relative;
 }
 
-#chart-bar {
+.chart__bar {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0px;
     left: 0;
+
     padding: 10px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 @media screen and (max-width: 900px) {
@@ -625,7 +651,6 @@ body {
     }
 
     .charts-form__status-block {
-    
         &_coords {
             margin-bottom: 20px;
         }
@@ -719,30 +744,8 @@ body {
     .chart_pie-summary {
         width: 274px;
         height: 274px;
-        padding: 17px 36px;
-        padding: 0;
 
-        background-color: #f3faff;
-        margin-right: 0;
         margin-bottom: 15px;
-
-        .chart__caption {
-            margin-bottom: 0px;
-        }
-
-        .chart__pie {
-            max-width: 296px;
-            max-height: 296px;
-
-            margin-top: 0;
-
-            &_summary {
-                width: 250px;
-                height: 230px;
-
-                margin: 0 auto;
-            }
-        }
     }
 
     .charts-form__stats {
@@ -784,7 +787,7 @@ body {
     }
 
     .charts-form__table-container {
-        overflow: visible;
+        overflow: hidden;
     }
 
     .charts-form__status-wrapper_charts {
@@ -850,17 +853,15 @@ body {
             }
         }
     }
-}
 
-@media screen and (max-width: 576px) {
     .charts-form__table-container {
         margin-bottom: 35px;
         padding: 10px;
-        max-height: 80vh;
+        // max-height: 80vh;
 
         border: 1px solid #c0c0c0;
 
-        overflow: scroll;
+        // overflow: scroll;
 
         .charts-form__table {
             min-width: 100%;

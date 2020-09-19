@@ -1,8 +1,8 @@
-let p_chart_month = echarts.init(document.getElementById('chart-pie_month'));
-let p_chart_week = echarts.init(document.getElementById('chart-pie_week'));
-let p_chart_day = echarts.init(document.getElementById('chart-pie_day'));
+let p_chart_month = echarts.init(document.getElementById('chart_pie_month'));
+let p_chart_week = echarts.init(document.getElementById('chart_pie_week'));
+let p_chart_day = echarts.init(document.getElementById('chart_pie_day'));
 
-let p_chart_summary = echarts.init(document.getElementById('chart-pie_summary'));
+let p_chart_summary = echarts.init(document.getElementById('chart_pie_summary'));
 
 //pie-chart options
 var p_option = {
@@ -13,7 +13,7 @@ var p_option = {
     series: [
         {
             type: 'pie',
-            radius: '70%',
+            radius: '76%',
             center: ['50%', '50%'],
             selectedMode: 'single',
             label: {
@@ -25,10 +25,13 @@ var p_option = {
                 { value: 634, name: '3' },
                 { value: 735, name: '4' },
                 { value: 735, name: '5' },
+                { value: 735, name: '6' },
+                { value: 735, name: '7' },
+                { value: 735, name: '8' },
             ],
             emphasis: {
                 itemStyle: {
-                    shadowBlur: 10,
+                    shadowBlur: 5,
                     shadowOffsetX: 0,
                     shadowColor: 'rgba(0, 0, 0, 0.5)'
                 }
